@@ -1,0 +1,415 @@
+[gd_scene load_steps=13 format=3 uid="uid://bvpwci0nqyuup"]
+
+[ext_resource type="PackedScene" uid="uid://dnii1h6d7oqwp" path="res://addons/UI Designer/User/Custom items.tscn" id="1_f5pih"]
+[ext_resource type="Material" uid="uid://cs6b1wthvrvp8" path="res://addons/UI Designer/Resources/Button shadow.tres" id="1_tarpn"]
+[ext_resource type="Shader" path="res://Addons/UI Designer/Resources/Button shadow.gdshader" id="2_ucb07"]
+[ext_resource type="Texture2D" uid="uid://snp0rwn3cdd3" path="res://addons/UI Designer/Resources/As neighbor.svg" id="3_0ye74"]
+[ext_resource type="Texture2D" uid="uid://5fl16uj5wedo" path="res://addons/UI Designer/Resources/Up.svg" id="3_vawle"]
+[ext_resource type="Texture2D" uid="uid://bvioni3mnvyhy" path="res://addons/UI Designer/Resources/Down.svg" id="4_3r2j3"]
+[ext_resource type="Texture2D" uid="uid://y3h1fyg6aqyt" path="res://addons/UI Designer/Resources/Parent all.svg" id="4_vy8o7"]
+[ext_resource type="Texture2D" uid="uid://de47u268lrayo" path="res://addons/UI Designer/Resources/Set text.svg" id="5_lwaqq"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8aajh"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x0ppx"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+draw_center = false
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Theme" id="Theme_pte5u"]
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 5
+Button/styles/normal = SubResource("StyleBoxEmpty_8aajh")
+Button/styles/pressed = SubResource("StyleBoxFlat_x0ppx")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4srrr"]
+shader = ExtResource("2_ucb07")
+
+[node name="UI Designer" type="Control"]
+layout_mode = 3
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 14.0
+offset_top = -9.0
+offset_right = -14.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_filter = 1
+theme = SubResource("Theme_pte5u")
+
+[node name="Types" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+
+[node name="Basic" type="Control" parent="Types"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Control" type="Control" parent="Types/Basic"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="Types/Basic"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorRect" type="ColorRect" parent="Types/Basic"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Types/Basic"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Types/Basic"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ReferenceRect" type="ReferenceRect" parent="Types/Basic"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="Types/Basic"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Buttons" type="Control" parent="Types"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="Types/Buttons"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="TextureButton" type="TextureButton" parent="Types/Buttons"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CheckButton" type="CheckButton" parent="Types/Buttons"]
+layout_mode = 0
+offset_right = 44.0
+offset_bottom = 24.0
+
+[node name="ColorPickerButton" type="ColorPickerButton" parent="Types/Buttons"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="MenuButton" type="MenuButton" parent="Types/Buttons"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="OptionButton" type="OptionButton" parent="Types/Buttons"]
+layout_mode = 0
+offset_right = 14.0
+offset_bottom = 20.0
+
+[node name="LinkButton" type="LinkButton" parent="Types/Buttons"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Containers" type="Control" parent="Types"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BoxContainer" type="BoxContainer" parent="Types/Containers"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="FlowContainer" type="FlowContainer" parent="Types/Containers"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GridContainer" type="GridContainer" parent="Types/Containers"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SplitContainer" type="SplitContainer" parent="Types/Containers"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TabContainer" type="TabContainer" parent="Types/Containers"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Types/Containers"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CenterContainer" type="CenterContainer" parent="Types/Containers"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PanelContainer" type="PanelContainer" parent="Types/Containers"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="Types/Containers"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Types/Containers"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="Types/Containers"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Ranges" type="Control" parent="Types"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HScrollBar" type="HScrollBar" parent="Types/Ranges"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="VScrollBar" type="VScrollBar" parent="Types/Ranges"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="HSlider" type="HSlider" parent="Types/Ranges"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 16.0
+
+[node name="VSlider" type="VSlider" parent="Types/Ranges"]
+layout_mode = 0
+offset_right = 16.0
+offset_bottom = 8.0
+
+[node name="ProgressBar" type="ProgressBar" parent="Types/Ranges"]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 27.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="Types/Ranges"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SpinBox" type="SpinBox" parent="Types/Ranges"]
+layout_mode = 0
+offset_right = 83.0625
+offset_bottom = 31.0
+
+[node name="Text" type="Control" parent="Types"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Types/Text"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Types/Text"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="LineEdit" type="LineEdit" parent="Types/Text"]
+layout_mode = 0
+offset_right = 67.0625
+offset_bottom = 31.0
+
+[node name="TextEdit" type="TextEdit" parent="Types/Text"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="CodeEdit" type="CodeEdit" parent="Types/Text"]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Selection" type="Control" parent="Types"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ItemList" type="ItemList" parent="Types/Selection"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Tree" type="Tree" parent="Types/Selection"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ColorPicker" type="ColorPicker" parent="Types/Selection"]
+layout_mode = 0
+offset_left = 3152.0
+offset_top = 1576.0
+offset_right = 1874.0
+offset_bottom = 2144.0
+
+[node name="TabBar" type="TabBar" parent="Types/Selection"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="MenuBar" type="MenuBar" parent="Types/Selection"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Custom" parent="Types" instance=ExtResource("1_f5pih")]
+
+[node name="Add item template" type="Button" parent="."]
+visible = false
+material = ExtResource("1_tarpn")
+custom_minimum_size = Vector2(24, 24)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -15.5
+offset_right = 32.0
+offset_bottom = 16.5
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8aajh")
+expand_icon = true
+
+[node name="Options" type="BoxContainer" parent="."]
+material = ExtResource("1_tarpn")
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = -35.0
+offset_right = 378.0
+grow_vertical = 0
+
+[node name="To selected" type="Button" parent="Options"]
+use_parent_material = true
+custom_minimum_size = Vector2(32, 24)
+layout_mode = 2
+tooltip_text = "Add node setting:
+Off - as neighbor of selected node
+On - as child of selected node"
+toggle_mode = true
+icon = ExtResource("3_0ye74")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Parent level" type="Button" parent="Options"]
+use_parent_material = true
+custom_minimum_size = Vector2(32, 24)
+layout_mode = 2
+tooltip_text = "On - Put current and its neighbor nodes as child of the new node."
+toggle_mode = true
+icon = ExtResource("4_vy8o7")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Rename" type="Button" parent="Options"]
+use_parent_material = true
+custom_minimum_size = Vector2(32, 24)
+layout_mode = 2
+tooltip_text = "Rename node and set its 'text' property to input text.
+If empty, text will be removed without node rename."
+icon = ExtResource("5_lwaqq")
+icon_alignment = 1
+expand_icon = true
+
+[node name="Add container" type="BoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 44.0
+offset_top = -72.0
+offset_right = 1108.0
+offset_bottom = -41.0
+grow_vertical = 0
+vertical = true
+
+[node name="Move up" type="Button" parent="."]
+material = SubResource("ShaderMaterial_4srrr")
+custom_minimum_size = Vector2(22, 22)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -82.0
+offset_right = 30.0
+offset_bottom = -60.0
+grow_vertical = 0
+tooltip_text = "Move child up"
+icon = ExtResource("3_vawle")
+expand_icon = true
+
+[node name="Move down" type="Button" parent="."]
+material = SubResource("ShaderMaterial_4srrr")
+custom_minimum_size = Vector2(22, 22)
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 8.0
+offset_top = -61.0
+offset_right = 30.0
+offset_bottom = -39.0
+grow_vertical = 0
+tooltip_text = "Move child down"
+icon = ExtResource("4_3r2j3")
+expand_icon = true
+
+[node name="Rename panel" type="PopupPanel" parent="."]
+size = Vector2i(200, 39)
+
+[node name="LineEdit" type="LineEdit" parent="Rename panel"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 196.0
+offset_bottom = 35.0

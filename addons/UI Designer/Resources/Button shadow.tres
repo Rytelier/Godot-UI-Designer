@@ -1,0 +1,6 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://cs6b1wthvrvp8"]
+
+[ext_resource type="Shader" path="res://Addons/UI Designer/Resources/Button shadow.gdshader" id="1_p3lxm"]
+
+[resource]
+shader = ExtResource("1_p3lxm")

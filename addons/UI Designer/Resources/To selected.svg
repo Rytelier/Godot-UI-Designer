@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created using Krita: https://krita.org -->
+
+<svg
+   width="7.68pt"
+   height="7.68pt"
+   viewBox="0 0 7.68 7.68"
+   version="1.1"
+   id="svg10"
+   sodipodi:docname="As neighbor.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview12"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="64"
+     inkscape:cx="4.6328125"
+     inkscape:cy="5.296875"
+     inkscape:window-width="2560"
+     inkscape:window-height="1387"
+     inkscape:window-x="-8"
+     inkscape:window-y="1072"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg10" />
+  <defs
+     id="defs2" />
+  <rect
+     style="opacity:1;fill:#ffffff;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+     id="rect347"
+     width="3.0658684"
+     height="0.36023951"
+     x="0.60550892"
+     y="5.8711376" />
+  <path
+     sodipodi:type="star"
+     style="opacity:1;fill:#ffffff;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+     id="path401"
+     inkscape:flatsided="true"
+     sodipodi:sides="3"
+     sodipodi:cx="0.34491017"
+     sodipodi:cy="4.6984429"
+     sodipodi:r1="0.7597695"
+     sodipodi:r2="0.37988475"
+     sodipodi:arg1="0"
+     sodipodi:arg2="1.0471976"
+     inkscape:rounded="0"
+     inkscape:randomized="0"
+     d="m 1.1046797,4.6984429 -1.13965428,0.6579797 0,-1.3159594 z"
+     inkscape:transform-center-x="-0.18994239"
+     transform="matrix(1,0,0,1.82124,3.1365248,-2.4838181)" />
+  <rect
+     style="opacity:1;fill:#ffffff;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+     id="rect413"
+     width="2.0378225"
+     height="2.0275362"
+     x="0.99573022"
+     y="0.32123196" />
+  <rect
+     style="fill:#ffffff;stroke-width:0.230728;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke"
+     id="rect413-92"
+     width="6.9583497"
+     height="0.50576818"
+     x="1.8590353"
+     y="-0.34525397"
+     transform="rotate(45)" />
+  <rect
+     style="fill:#62ff49;stroke-width:0.25;stroke-linecap:round;stroke-linejoin:round;paint-order:markers fill stroke;fill-opacity:1"
+     id="rect413-9"
+     width="2.0378225"
+     height="2.0275362"
+     x="4.5460892"
+     y="5.0374894" />
+</svg>
