@@ -99,6 +99,16 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="HSeparator" type="HSeparator" parent="Types/Basic"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 4.0
+
+[node name="VSeparator" type="VSeparator" parent="Types/Basic"]
+layout_mode = 0
+offset_right = 4.0
+offset_bottom = 40.0
+
 [node name="Buttons" type="Control" parent="Types"]
 anchors_preset = 0
 offset_right = 40.0
@@ -286,10 +296,10 @@ offset_bottom = 40.0
 
 [node name="ColorPicker" type="ColorPicker" parent="Types/Selection"]
 layout_mode = 0
-offset_left = 3152.0
-offset_top = 1576.0
-offset_right = 1874.0
-offset_bottom = 2144.0
+offset_left = 3160.0
+offset_top = 1580.0
+offset_right = 1878.0
+offset_bottom = 2148.0
 
 [node name="TabBar" type="TabBar" parent="Types/Selection"]
 layout_mode = 0
